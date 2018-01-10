@@ -4,12 +4,13 @@ import time
 import numpy as np
 import cv2
 
+#Default colors for filter, later to be changed by GUI
 filterColorLow = [0,120,154]
 filterColorHigh = [255,255,255]
 
 def imageProcess():
 
-	#Create video stream from camera 
+	#Create video stream from camera (0) for laptop webcam, (1) for usb webcam. On a desktop probably (0) for a USB webcam
 	cap = cv2.VideoCapture(0)
 
 
